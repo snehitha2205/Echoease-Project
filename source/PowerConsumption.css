@@ -1,0 +1,36 @@
+/* powerConsumption.css */
+.power-consumption {
+    background-color: #34495e; /* Dark background for consistency */
+    color: #ecf0f1; /* Light text color */
+    padding: 1.5rem; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 1rem; /* Space above the section */
+  }
+  
+  .power-consumption h2 {
+    font-size: 1.5rem; /* Heading size */
+    margin-bottom: 1rem; /* Space below the heading */
+  }
+  
+  .power-consumption ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .power-consumption li {
+    padding: 0.5rem 0; /* Space between items */
+    border-bottom: 1px solid #ecf0f1; /* Bottom border for separation */
+  }
+  
+  .power-consumption li:last-child {
+    border-bottom: none; /* Remove border from the last item */
+  }
+  
+  .appliance-name {
+    font-weight: bold; /* Bold text for the name */
+  }
+  
+  .appliance-power {
+    color: #95a5a6; /* Lighter color for power usage */
+  }
+  

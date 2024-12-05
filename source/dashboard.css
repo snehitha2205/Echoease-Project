@@ -1,0 +1,161 @@
+/* Sidebar styling for large screens */
+.parent{
+  display: flex;
+  width: 100%; /* Make sure the parent is taking full width */
+}
+
+.sidebar {
+     /* Sidebar takes 30% width on large screens */
+    background-color: #2c3e50; /* Dark theme background */
+    padding: 1.5rem;
+    height: 100vh;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 0 10px 10px 0;
+  }
+  .sidebar {
+    position: sticky;
+    top: 0; /* Keeps the sidebar at the top when scrolling */
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: auto; /* Enables scrolling if the content exceeds the viewport height */
+    /* background-color: #f8f9fa; Optional: change the background color */
+    padding: 1rem; /* Optional: add some padding */
+  }
+  
+  /* Sidebar link styling */
+  .sidebar .nav-link {
+    color: #ecf0f1; /* Light text color */
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; /* Space between icon and text */
+    border-radius: 5px;
+    transition: background 0.4s ease, transform 0.3s ease; /* Smooth background and transform transitions */
+  }
+  
+  .sidebar .nav-link i {
+    font-size: 1.4rem;
+  }
+  
+  /* Gradient background and scale effect on hover */
+  .sidebar .nav-link:hover {
+    background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient effect */
+    color: #fff;
+    transform: translateX(5px); /* Slight shift effect */
+  }
+  
+  /* Active link styling */
+  .nav-link.active {
+    background: black;
+    color: #fff;
+  }
+  
+  /* Offcanvas styling for mobile screens */
+  .offcanvas-body {
+    background-color: #2c3e50; /* Same dark theme */
+    padding: 1.5rem;
+    height: 100vh; /* Full height for Offcanvas */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Offcanvas link styling */
+  .offcanvas-body .nav-link {
+    color: #ecf0f1; /* Light text color */
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; /* Space between icon and text */
+    border-radius: 5px;
+    transition: background 0.4s ease, transform 0.3s ease; /* Smooth background and transform transitions */
+  }
+  
+  .offcanvas-body .nav-link:hover {
+    background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient effect for mobile */
+    color: #fff;
+    transform: translateX(5px); /* Slight shift effect */
+  }
+  
+  /* Adjust for mobile screens */
+  @media (max-width: 991px) {
+    .sidebar {
+      display: none; /* Hide sidebar on mobile screens */
+    }
+    .content {
+      width: 100%; /* Content takes full width on mobile */
+    }
+  }
+  /* Add this to your CSS file, e.g., dashboard.css */
+.toggle-button {
+  position: sticky; /* Makes the button sticky */
+  padding:15px;
+  border-radius: 10px;
+  margin: 10px;
+  top: 0; /* Sticks it to the top */
+  background-color: #f8f9fa; /* Background color (optional) */
+  border: 1px solid #ccc; /* Optional border */
+  z-index: 1030; /* Ensure it stays above other content */
+  /* padding: 0.5rem; Padding for aesthetics */
+  display: flex; /* Flex to center icon */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.toggle-button:hover {
+  background-color: #e9ecef; /* Change background on hover */
+}
+
+
+  /* dashboard.css */
+.d-flex {
+  display: flex;
+}
+
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link i {
+  margin-right: 8px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.user-profile {
+  padding: 2rem;
+  text-align: center;
+}
+
+.user-profile img,
+.user-profile .avatar {
+  margin-bottom: 1rem;
+}
+
+/* dashboard.css */
+.appliance-cards {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row on large screens */
+  gap: 16px; /* Space between cards */
+}
+
+@media (max-width: 768px) {
+  .appliance-cards {
+    grid-template-columns: 1fr; /* One card per row on small screens */
+  }
+}

@@ -1,0 +1,47 @@
+.card {
+    border: none; /* Remove default card border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+    background-color: #ecf0f1; /* Light background to contrast with sidebar */
+    
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px; /* Round top-left corner */
+    border-top-right-radius: 10px; /* Round top-right corner */
+  }
+  
+  .status-badge .badge {
+    padding: 0.5rem 0.75rem; /* Add padding for badge */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    border-radius: 15px; /* Rounded badge corners */
+    margin:10px;
+  }
+  
+  .form-check-label {
+    margin-left: 8px; /* Space between checkbox and label */
+  }
+  
+  .form-check-input {
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  /* Optional: Add a transition effect for the switch */
+  .form-check-input:checked {
+    background-color: #3498db; /* Change background for checked state */
+  }
+  
+  .form-check-input:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.5); /* Shadow effect on focus */
+  }
+  .card-text{
+    color: black;
+    margin: 0;
+  }

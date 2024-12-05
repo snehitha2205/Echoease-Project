@@ -1,0 +1,125 @@
+:root {
+  --primary-color: #2c3e50; /* Given color */
+  --secondary-color: #ecf0f1; /* Light background */
+  --accent-color: #3498db; /* Accent color for buttons */
+  --text-color: #34495e; /* Dark text for readability */
+  --border-color: #bdc3c7; /* Border color for table */
+}
+
+/* Container */
+.feedback-management-container {
+  padding: 20px 40px;
+  background-color: var(--secondary-color);
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+}
+
+/* Header */
+h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Search Input */
+.search-input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.search-input:focus {
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 0 5px var(--accent-color);
+}
+
+/* Table Styling */
+.feedback-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-table th,
+.feedback-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.feedback-table th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+.feedback-table tr:nth-child(even) {
+  background-color: var(--secondary-color);
+}
+
+.feedback-table tr:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transition: background 0.2s ease;
+
+}
+
+/* Delete Button */
+.delete-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: red;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.delete-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feedback-table th, .feedback-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .search-input {
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+/* Heading Styling */
+h2 {
+  font-size: 2.2rem; /* Increase size for better visibility */
+  font-weight: 600; /* Semi-bold for emphasis */
+  color: var(--primary-color); /* Use the given color */
+  text-align: center; /* Center-align the heading */
+  margin-bottom: 30px; /* Space below the heading */
+  letter-spacing: 1px; /* Slight letter spacing for a modern look */
+  text-transform: uppercase; /* Uppercase for added emphasis */
+  /* border-bottom: 3px solid var(--accent-color); Underline effect with accent color */
+  padding-bottom: 10px; /* Add some space between the text and the border */
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transitions for hover */
+}
+
+

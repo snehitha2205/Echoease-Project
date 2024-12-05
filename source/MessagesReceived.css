@@ -1,0 +1,101 @@
+/* MessagesReceived.css */
+
+.messages-received {
+  /* background-color: #2c3e50;  Dark background color */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
+}
+
+.messages{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #e67e22; /* Blue line under the heading */
+  padding-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.messages-received ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.messages-received ul li {
+  background-color: #34495e;  /* Slightly lighter dark background for messages */
+  border-left: 5px solid #e67e22;  /* Orange left border */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);  /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.messages-received ul li:hover {
+  transform: translateY(-4px);  /* Subtle hover effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);  /* Stronger shadow on hover */
+}
+
+p {
+  font-size: 16px;
+  color: #ecf0f1;  /* Light grey color for message text */
+  line-height: 1.6;
+}
+
+.messages-received ul li p strong {
+  color: #e67e22;  /* Orange color for labels */
+}
+
+.messages-received ul li textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #2c3e50;  /* Darker background for textarea */
+  color: #ecf0f1;  /* Light text inside the textarea */
+  border: 1px solid #7f8c8d;  /* Light grey border */
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #e67e22;  /* Orange border on focus */
+  outline: none;
+}
+
+.messages-received ul li button {
+  background-color: #e67e22;  /* Orange background */
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.messages-received ul li button:hover {
+  background-color: #d35400;  /* Darker orange on hover */
+  transform: scale(1.05);  /* Slightly scale up button */
+}
+
+.messages-received ul li button:disabled {
+  background-color: #bdc3c7;  /* Disabled button state */
+  cursor: not-allowed;
+}
+
+.messages-received ul li:last-child {
+  margin-bottom: 0;  /* Remove margin for the last list item */
+}
+
+button:active {
+  transform: scale(1);  /* Reset scale when clicked */
+}
